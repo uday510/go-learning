@@ -1,0 +1,77 @@
+# ===================
+# Go Build Artifacts
+# ===================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+*.out
+
+# Go test & coverage
+*.test
+*.prof
+*.cov
+*.coverprofile
+coverage.*
+testdata/
+
+# Ignore compiled binaries in all subdirectories
+# (e.g., cards/card, helloworld/hello, api/server, etc.)
+*/card
+*/hello
+*/main
+*/server
+*/app
+
+# Optional: ignore all files in subdirs except source files
+*/*
+!*/.gitignore
+!*/*.go
+!*/*.mod
+!*/*.sum
+!*/*.md
+
+# ===================
+# Dependency & Tooling
+# ===================
+go.sum
+**/bin/
+**/pkg/
+**/dist/
+vendor/
+
+# ===================
+# Editor / IDE Files
+# ===================
+# GoLand / IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Vim / Emacs
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===================
+# File Watchers & Dev Tools
+# ===================
+.reflex*
+.air
+*.log
+
+# ===================
+# OS-Specific
+# ===================
+.DS_Store
+Thumbs.db
